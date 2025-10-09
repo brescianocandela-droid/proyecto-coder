@@ -116,6 +116,15 @@ body{
   font-family: Arial, Helvetica, sans-serif ;
 }
 
+/* titulo portfolio--- */
+.titulo-portfolio {
+  color: #275070;
+font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  padding: 10px 0px;
+}
+
 
 /* presentación----- */
 .presentacion {
@@ -155,7 +164,8 @@ text-align: center;
 
 /* Footer------------------ */
 footer {
-  background-color: #edebe5;    
+  background-color: #edebe5;
+  text-align: center;    
 }
 
 .wsp {
@@ -175,19 +185,12 @@ footer {
 
 .contenedor-grid{
   display: grid;
-  grid-template-areas: 
-  "titulo titulo titulo"
-  "foto1 texto1 texto1"
-  "foto1 foto2 foto2"
-  "texto2 foto3 texto3";
-
-  grid-template-columns: 30% 40% 30% ;
-
-
-  grid-template-rows: 100px 150px 250px 250px;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  padding: 40px;
+  text-align: center;
+  align-items: start; 
+}
  }
 
  .titulo{
@@ -257,4 +260,5 @@ header ul {
 
   }
 
- 
+
+
