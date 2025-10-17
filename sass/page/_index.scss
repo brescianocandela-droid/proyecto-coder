@@ -1,0 +1,40 @@
+@use "../general/variable" as *;
+@use "../general/mixins";
+
+/*main index*/
+.banner {
+  background-image: url("../medios/banner.png");
+  background-size: cover; /* ajusta la imagen */
+  background-position: center;
+  width: 100%;
+  .titulobanner {  
+  text-align: center;
+  text-decoration: underline;
+  font-size: 20px;
+  padding-top: 10px;
+}
+.textobanner {  
+  color: $azul;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-shadow: 0px 0px 41px $blanco;
+}
+} 
+
+/*presentacion*/
+.iconos {
+display: flex;
+flex-direction: row;
+justify-content: center;
+gap: 70px;
+padding: 10px 0px;
+text-align: center;
+div{
+     p {
+         color: $azul;
+    }
+    img {
+         width: 100px;
+         }
+    }
+}

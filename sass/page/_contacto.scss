@@ -1,0 +1,127 @@
+@use "../general/variable" as *;
+
+.contacto-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 50px 20px;
+
+  .contacto-intro {
+    text-align: center;
+
+    h1 {
+      color: $rosa;
+      margin-bottom: 15px;
+      font-size: 2rem;
+    }
+
+    p {
+      color: $beige;
+      font-size: 1rem;
+      max-width: 600px;
+    }
+  }
+
+  .contacto-form {
+    width: 100%;
+    max-width: 1000px; // contenedor amplio
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: $blanco;
+        border-radius: 12px;
+        padding: 25px;
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); // efecto “cuadro grande”
+        width: 100%; // ocupa todo el ancho del form
+
+        label {
+          font-weight: bold;
+          color: $rosa;
+          font-size: 1.2rem;
+        }
+
+        input,
+        textarea {
+          width: 100%;
+          border: 1px solid $beige;
+          border-radius: 12px;
+          font-size: 1.2rem;
+          font-family: $font-family;
+          padding: 20px;
+          transition: border-color 0.3s;
+
+          &:focus {
+            border-color: $rosa;
+            outline: none;
+          }
+        }
+
+        input {
+          height: 80px; // altura grande para inputs
+        }
+
+        textarea {
+          height: 250px; // altura grande para textarea
+          resize: vertical;
+        }
+      }
+
+      button {
+        align-self: flex-end;
+        padding: 18px 45px;
+        background-color: $rosa;
+        color: $blanco;
+        border: none;
+        border-radius: 12px;
+        font-weight: bold;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: $rosa;
+        }
+      }
+    }
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contacto-form {
+    max-width: 90%;
+    padding: 30px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contacto-form {
+    padding: 20px;
+    gap: 25px;
+
+    form {
+      gap: 25px;
+
+      .form-group {
+        padding: 20px;
+      }
+
+      button {
+        width: 100%;
+        align-self: stretch;
+      }
+    }
+  }
+}

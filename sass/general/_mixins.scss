@@ -1,0 +1,23 @@
+@use "variable" as *;
+/* ---------------- MIXINS ---------------- */
+
+/* Mixin sin parámetros: flex horizontal centrado */
+@mixin flex-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mixin con parámetros: tamaño de un elemento */
+@mixin tamanio($ancho, $alto) {
+  width: $ancho;
+  height: $alto;
+}
+
+/* Mixin con parámetros opcionales (ejemplo: color y padding) */
+@mixin caja($bg-color: $beige, $padding: 10px) {
+  background-color: $bg-color;
+  padding: $padding;
+}
+

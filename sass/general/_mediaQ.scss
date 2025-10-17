@@ -1,0 +1,50 @@
+@use "../general/variable" as *;
+@use "../general/mixins";
+
+/* ---------------- MEDIA QUERIES ---------------- */
+
+/* Mobile: hasta 480px */
+@media (max-width: 480px) {
+
+  /* Header */
+  .header {
+    flex-direction: column;
+
+    .headerlogo {
+      width: 50px; /* reducimos logo */
+    }
+
+    .headernav ul {
+      margin-right: 0;
+    }
+  }
+
+  /* Nav */
+  .nav {
+    width: 90%;
+  }
+
+  /* Banner (si lo tenés en index) */
+  .banner {
+    .textobanner {
+      font-size: 1.2rem; /* reducimos texto */
+    }
+  }
+
+}
+
+/* Tablet: hasta 768px */
+@media (max-width: 768px) {
+
+  .header {
+    flex-direction: column;
+
+    .headerlogo {
+      width: 60px;
+    }
+  }
+
+  .nav {
+    width: 70%;
+  }
+}
