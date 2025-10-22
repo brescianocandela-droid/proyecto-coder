@@ -1,50 +1,58 @@
 @use "../general/variable" as *;
 @use "../general/mixins";
 
-/* ---------------- MEDIA QUERIES ---------------- */
+/* ---------------- Media Queries ---------------- */
 
 /* Mobile: hasta 480px */
 @media (max-width: 480px) {
 
   /* Header */
-  .header {
+  header {
     flex-direction: column;
-
-    .headerlogo {
-      width: 50px; /* reducimos logo */
-    }
-
-    .headernav ul {
-      margin-right: 0;
-    }
+    align-items: center;
+    text-align: center;
+    padding: 10px;
   }
 
-  /* Nav */
-  .nav {
-    width: 90%;
+  .headerlogo img {
+    width: 40px;    
+    height: auto;
   }
 
-  /* Banner (si lo tenés en index) */
-  .banner {
-    .textobanner {
-      font-size: 1.2rem; /* reducimos texto */
-    }
-  }
-
-}
-
-/* Tablet: hasta 768px */
-@media (max-width: 768px) {
-
-  .header {
+  .headernav ul {
     flex-direction: column;
-
-    .headerlogo {
-      width: 60px;
-    }
+    margin: 10px 0 0 0;
+    padding: 0;
+    text-align: center;
   }
 
-  .nav {
-    width: 70%;
+  .headernav ul li {
+    margin: 5px 0;
+  }
+
+  /* Banner */
+  .banner .textobanner {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  /* Formulario de contacto */
+  .contacto-form {
+    padding: 20px;
+    gap: 25px;
+
+    form {
+      gap: 25px;
+
+      .form-group {
+        padding: 20px;
+      }
+
+      button {
+        width: 100%;
+        align-self: stretch;
+      }
+    }
   }
 }

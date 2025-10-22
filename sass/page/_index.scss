@@ -1,10 +1,10 @@
 @use "../general/variable" as *;
 @use "../general/mixins";
 
-/* MAIN INDEX */
+/* Main Index*/
 .banner {
   background-image: url("../medios/banner.png");
-  background-size: cover; /* ajusta la imagen */
+  background-size: cover; 
   background-position: center;
   width: 100%;
 
@@ -12,7 +12,7 @@
     text-align: center;
     text-decoration: underline;
     font-size: 20px;
-    padding-top: 10px;
+    padding: 20px 20px 50px 20px;
   }
 
   .textobanner {  
@@ -23,7 +23,7 @@
   }
 } 
 
-/* PRESENTACIÓN */
+/* Presentacion */
 .iconos {
   display: flex;
   flex-direction: row;
@@ -43,16 +43,16 @@
   }
 }
 
-/* HEADER */
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
-  background-color: $beige; // o el color que uses
+  background-color: $beige; 
 
   .logo {
-    width: 120px; // tamaño ajustado
+    width: 120px; 
     height: auto;
   }
 
@@ -75,7 +75,7 @@ header {
   }
 }
 
-/* FOOTER */
+/* Footer*/
 footer {
   display: flex;
   flex-direction: column;
@@ -96,12 +96,12 @@ footer {
   }
 }
 
-/* ÍCONO WHATSAPP FLOTANTE */
+/* Wsp flotante */
 .wsp {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 60px; // tamaño flotante
+  width: 60px; 
   height: auto;
   z-index: 100;
   cursor: pointer;
@@ -111,3 +111,21 @@ footer {
     transform: scale(1.1);
   }
 }
+
+
+section.dibujando {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+}
+
+/* foto dibujadno */
+section.dibujando > img {
+  width: 100%;
+  height: 70vh; 
+  object-fit: cover;
+  display: block;
+}
+
+

@@ -1,20 +1,20 @@
 @use "../general/variable" as *;
 
-/* ---------------- RESET GENERAL ---------------- */
+/* ---------------- General ---------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ---------------- ESTILOS BASE ---------------- */
+/* ---------------- Estilos ---------------- */
 body {
   font-family: $font-family;
   color: $azul;
   background-color: $blanco;
 }
 
-/* ---------------- TITULOS Y PÁRRAFOS ---------------- */
+/* ---------------- Titulos y parrafos ---------------- */
 h1, h5, p {
   text-align: center;
   margin-top: 10px;
@@ -22,13 +22,23 @@ h1, h5, p {
 
 h1 {
   color: $rosa;
+  margin-top: 15px;
 }
 
 h5 {
   color: $azul;
 }
 
+h3 {
+  color: $rosa;
+  text-align: center;
+  margin-top: 20px;    
+  margin-bottom: 20px; 
+}
+
 p {
   color: $azul;
+  margin-left: 2rem;  
+  margin-right: 2rem; 
 }
 
