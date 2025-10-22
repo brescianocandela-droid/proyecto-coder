@@ -17,9 +17,14 @@
     }
 
     p {
-      color: $beige;
+      color: $azul;
       font-size: 1rem;
       max-width: 600px;
+    }
+
+    /* 🔹 párrafos inmediatamente debajo de un h1 */
+    h + p {
+      color: $rosa; 
     }
   }
 
