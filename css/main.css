@@ -30,13 +30,6 @@ h5 {
   color: #275070;
 }
 
-h3 {
-  color: #ebaab0;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 0.5rem;
-}
-
 p {
   color: #275070;
   margin-left: 2rem;
@@ -233,6 +226,7 @@ section.dibujando > img {
   gap: 2rem;
   padding: 1.5rem 8%;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .servicios__img img {
