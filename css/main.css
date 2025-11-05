@@ -34,7 +34,7 @@ h3 {
   color: #ebaab0;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 0.5rem;
 }
 
 p {
@@ -224,6 +224,35 @@ section.dibujando > img {
   height: 70vh;
   object-fit: cover;
   display: block;
+}
+
+.servicios {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.5rem 8%;
+  margin-top: 0;
+}
+
+.servicios__img img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.servicios__texto {
+  flex: 1;
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #1b1b1b;
+}
+
+.servicios__texto p {
+  margin: 0.5rem 0;
 }
 
 /* ---------------- Contacto ---------------- */
@@ -503,6 +532,81 @@ section.estudio > img {
   .contacto-form form button {
     width: 100%;
     align-self: stretch;
+  }
+  /* ---------------- Servicios ---------------- */
+  .servicios {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 5%;
+  }
+  .servicios__texto {
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+  }
+  .servicios__img img {
+    max-width: 100%;
+  }
+}
+/* Tablet: entre 481px y 900px */
+@media (min-width: 481px) and (max-width: 900px) {
+  /* Header */
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+  }
+  .headerlogo img {
+    width: 60px;
+    height: auto;
+  }
+  .headernav ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+  }
+  .headernav ul li {
+    margin: 0;
+  }
+  /* Banner */
+  .banner .textobanner {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 0 30px;
+  }
+  /* Formulario de contacto */
+  .contacto-form {
+    padding: 40px;
+    gap: 30px;
+  }
+  .contacto-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .contacto-form form .form-group {
+    padding: 15px;
+  }
+  .contacto-form form button {
+    grid-column: span 2;
+    width: 60%;
+    justify-self: center;
+  }
+  /* ---------------- Servicios ---------------- */
+  .servicios {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 8%;
+  }
+  .servicios__texto {
+    font-size: 1.7rem;
+    margin-top: 2rem;
+  }
+  .servicios__img img {
+    max-width: 90%;
   }
 }
 

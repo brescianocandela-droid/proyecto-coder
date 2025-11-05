@@ -55,4 +55,95 @@
       }
     }
   }
+
+  /* ---------------- Servicios ---------------- */
+  .servicios {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 5%;
+  }
+
+  .servicios__texto {
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+  }
+
+  .servicios__img img {
+    max-width: 100%;
+  }
+}
+
+/* Tablet: entre 481px y 900px */
+@media (min-width: 481px) and (max-width: 900px) {
+
+  /* Header */
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+  }
+
+  .headerlogo img {
+    width: 60px;
+    height: auto;
+  }
+
+  .headernav ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .headernav ul li {
+    margin: 0;
+  }
+
+  /* Banner */
+  .banner .textobanner {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 0 30px;
+  }
+
+  /* Formulario de contacto */
+  .contacto-form {
+    padding: 40px;
+    gap: 30px;
+
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+
+      .form-group {
+        padding: 15px;
+      }
+
+      button {
+        grid-column: span 2;
+        width: 60%;
+        justify-self: center;
+      }
+    }
+  }
+
+  /* ---------------- Servicios ---------------- */
+  .servicios {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 8%;
+  }
+
+  .servicios__texto {
+    font-size: 1.7rem;
+    margin-top: 2rem;
+  }
+
+  .servicios__img img {
+    max-width: 90%;
+  }
 }
