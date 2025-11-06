@@ -5,8 +5,8 @@
 .contenedor-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 40px;
-  padding: 40px;
+  gap: 20px;
+  padding: 20px;
   text-align: center;
   align-items: start;
   margin: 0 5px;
@@ -23,12 +23,8 @@
 
 /* Título */
 .titulo-portfolio {
-  color: #275070;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 3rem;
-  text-align: center;
-  padding: 10px 0;
-  text-decoration: underline;
+  color: $rosa;
+  margin-top: 40px;
 }
 
 /* ---------------- Cards ---------------- */
@@ -97,9 +93,73 @@ section.estudio > img {
 .quote p {
   font-size: 1.8rem; 
   font-style: italic; 
-  color: #000000; 
+  color: $negro; 
   margin: 0; 
   padding: 20px 0;
+}
+
+/*testimonios*/
+.testimonios {
+  background-color: $blanco; 
+  text-align: center;
+  padding: 40px 40px; 
+  margin-top: 0px; 
+  margin-bottom: 0px; 
+
+  h2 {
+    font-size: 1.5rem;
+    color: $azul;
+    margin-bottom: 40px;
+    font-weight: 600;
+  }
+
+  .contenedor-testimonios {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .tarjeta-testimonio {
+    background: $blanco;
+    border: 2px solid $rosa;
+    border-radius: 12px;
+    padding: 30px;
+    width: 45%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .estrellas {
+      color: $amarillo;
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      letter-spacing: 3px;
+    }
+
+    .texto {
+      font-style: italic;
+      color: $azul;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .nombre {
+      font-weight: 600;
+      color: $negro;
+    }
+
+    .cargo {
+      font-size: 0.9rem;
+      color: $azul;
+    }
+  }
 }
 
 

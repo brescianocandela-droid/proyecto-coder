@@ -71,6 +71,38 @@
   .servicios__img img {
     max-width: 100%;
   }
+
+  /* ---------------- Testimonios ---------------- */
+  .testimonios {
+    padding: 30px 20px;
+
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 25px;
+    }
+
+    .contenedor-testimonios {
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .tarjeta-testimonio {
+      width: 100%;
+      padding: 20px;
+
+      .texto {
+        font-size: 0.95rem;
+      }
+
+      .nombre {
+        font-size: 1rem;
+      }
+
+      .cargo {
+        font-size: 0.85rem;
+      }
+    }
+  }
 }
 
 /* Tablet: entre 481px y 900px */
@@ -146,4 +178,35 @@
   .servicios__img img {
     max-width: 90%;
   }
+
+  /* ---------------- Testimonios ---------------- */
+  .testimonios {
+    padding: 40px 30px;
+
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    .contenedor-testimonios {
+      gap: 30px;
+    }
+
+    .tarjeta-testimonio {
+      width: 48%;
+      padding: 25px;
+
+      .texto {
+        font-size: 1rem;
+      }
+
+      .nombre {
+        font-size: 1.05rem;
+      }
+
+      .cargo {
+        font-size: 0.9rem;
+      }
+    }
+  }
 }
+

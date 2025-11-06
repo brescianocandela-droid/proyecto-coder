@@ -23,7 +23,7 @@ h1, h5, p {
 
 h1 {
   color: #ebaab0;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 h5 {
@@ -93,7 +93,7 @@ footer {
   padding: 20px 0;
   font-family: Arial, Helvetica, sans-serif;
   color: #275070;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   border-top: 1px solid lighten #275070, 40;
 }
 
@@ -219,6 +219,7 @@ section.dibujando > img {
   display: block;
 }
 
+/*servicios*/
 .servicios {
   display: flex;
   align-items: center;
@@ -240,9 +241,9 @@ section.dibujando > img {
 .servicios__texto {
   flex: 1;
   font-family: "Playfair Display", serif;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   line-height: 1.8;
-  color: #1b1b1b;
+  color: #275070;
 }
 
 .servicios__texto p {
@@ -367,8 +368,8 @@ section.dibujando > img {
 .contenedor-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 40px;
-  padding: 40px;
+  gap: 20px;
+  padding: 20px;
   text-align: center;
   align-items: start;
   margin: 0 5px;
@@ -405,12 +406,8 @@ section.dibujando > img {
 
 /* Título */
 .titulo-portfolio {
-  color: #275070;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 3rem;
-  text-align: center;
-  padding: 10px 0;
-  text-decoration: underline;
+  color: #ebaab0;
+  margin-top: 40px;
 }
 
 /* ---------------- Cards ---------------- */
@@ -483,6 +480,62 @@ section.estudio > img {
   padding: 20px 0;
 }
 
+/*testimonios*/
+.testimonios {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 40px 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.testimonios h2 {
+  font-size: 1.5rem;
+  color: #275070;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+.testimonios .contenedor-testimonios {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.testimonios .tarjeta-testimonio {
+  background: #ffffff;
+  border: 2px solid #ebaab0;
+  border-radius: 12px;
+  padding: 30px;
+  width: 45%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.testimonios .tarjeta-testimonio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.testimonios .tarjeta-testimonio .estrellas {
+  color: #f4df92;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  letter-spacing: 3px;
+}
+.testimonios .tarjeta-testimonio .texto {
+  font-style: italic;
+  color: #275070;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.testimonios .tarjeta-testimonio .nombre {
+  font-weight: 600;
+  color: #000000;
+}
+.testimonios .tarjeta-testimonio .cargo {
+  font-size: 0.9rem;
+  color: #275070;
+}
+
 /* ---------------- Media Queries ---------------- */
 /* Mobile: hasta 480px */
 @media (max-width: 480px) {
@@ -539,6 +592,31 @@ section.estudio > img {
   }
   .servicios__img img {
     max-width: 100%;
+  }
+  /* ---------------- Testimonios ---------------- */
+  .testimonios {
+    padding: 30px 20px;
+  }
+  .testimonios h2 {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+  }
+  .testimonios .contenedor-testimonios {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .testimonios .tarjeta-testimonio {
+    width: 100%;
+    padding: 20px;
+  }
+  .testimonios .tarjeta-testimonio .texto {
+    font-size: 0.95rem;
+  }
+  .testimonios .tarjeta-testimonio .nombre {
+    font-size: 1rem;
+  }
+  .testimonios .tarjeta-testimonio .cargo {
+    font-size: 0.85rem;
   }
 }
 /* Tablet: entre 481px y 900px */
@@ -601,6 +679,29 @@ section.estudio > img {
   }
   .servicios__img img {
     max-width: 90%;
+  }
+  /* ---------------- Testimonios ---------------- */
+  .testimonios {
+    padding: 40px 30px;
+  }
+  .testimonios h2 {
+    font-size: 1.6rem;
+  }
+  .testimonios .contenedor-testimonios {
+    gap: 30px;
+  }
+  .testimonios .tarjeta-testimonio {
+    width: 48%;
+    padding: 25px;
+  }
+  .testimonios .tarjeta-testimonio .texto {
+    font-size: 1rem;
+  }
+  .testimonios .tarjeta-testimonio .nombre {
+    font-size: 1.05rem;
+  }
+  .testimonios .tarjeta-testimonio .cargo {
+    font-size: 0.9rem;
   }
 }
 

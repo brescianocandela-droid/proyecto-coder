@@ -128,6 +128,7 @@ section.dibujando > img {
   display: block;
 }
 
+/*servicios*/
 .servicios {
   display: flex;
   align-items: center;
@@ -149,9 +150,9 @@ section.dibujando > img {
 .servicios__texto {
   flex: 1;
   font-family: 'Playfair Display', serif;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   line-height: 1.8;
-  color: #1b1b1b;
+  color: $azul;
 }
 
 .servicios__texto p {
