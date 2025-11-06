@@ -549,6 +549,14 @@ section.estudio > img {
   .headerlogo img {
     width: 40px;
     height: auto;
+    object-fit: contain;
+  }
+  /* iconos */
+  .icono,
+  .icono-avion,
+  .headerlogo img {
+    width: 35px !important;
+    height: auto;
   }
   .headernav ul {
     flex-direction: column;
@@ -593,6 +601,11 @@ section.estudio > img {
   .servicios__img img {
     max-width: 100%;
   }
+  /* ---------------- Portfolio ---------------- */
+  .contenedor-grid {
+    gap: 20px;
+    padding: 20px;
+  }
   /* ---------------- Testimonios ---------------- */
   .testimonios {
     padding: 30px 20px;
@@ -630,6 +643,14 @@ section.estudio > img {
   }
   .headerlogo img {
     width: 60px;
+    height: auto;
+    object-fit: contain;
+  }
+  /* iconos */
+  .icono,
+  .icono-avion,
+  .headerlogo img {
+    width: 50px !important;
     height: auto;
   }
   .headernav ul {
